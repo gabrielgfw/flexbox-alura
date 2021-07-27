@@ -34,3 +34,23 @@
   flex-flow: column wrap;
   height: 250px;
 }
+
+.conteudoPrincipal-cursos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+  width: 22%;
+  margin: 1%;
+}
+
+/* Considerando apenas os elementos múltiplos de 4. */
+.conteudoPrincipal-cursos-link:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* Considerando apenas os elementos após elementos múltiplos de 4. */
+.conteudoPrincipal-cursos-link:nth-child(4n+1) {
+  margin-left: 0;
+}
